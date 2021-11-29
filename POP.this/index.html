@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>POP.this</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/icon.png" type="image/png">
+</head>
+<body>
+
+	<div class="start-menu">
+		<div class="title-pos">To stop the game, press the button "pause" on your keyboard <span>×</span></div>
+		
+		<div class="txt-big bst-score-menu">BEST SCORE: <span>0</span></div>
+		<div class="btn start">START</div>
+	</div>
+	
+	<div class="start-menu stop-menu">
+		<div class="txt-big bst-score-menu stop-score">BEST SCORE: <span>0</span></div>
+		
+		<div class="btn back">BACK</div>
+		<div class="btn restart">RESTART</div>
+	</div>
+
+	<div class="start-menu lose-menu">
+		<div class="txt-big bst-score-menu lose-this-score">SCORE: <span>0</span></div>
+		<div class="txt-big bst-score-menu lose-score">BEST SCORE: <span>0</span></div>
+	
+		<div class="btn restart-lose">RESTART</div>
+	</div>
+
+	<div class="game-area">
+		<div class="score">Score: <span>0</span></div>
+		<div class="score score-lose">Omissions: <span>0</span></div>
+		<div class="score score-best">Best result: <span>0</span></div>
+		<div class="game-obj"></div>
+	</div>
+
+	<div class="audio-obj">
+		<audio src="sounds/point.mp3" id="point-a"></audio>
+		<audio src="sounds/omission.mp3" id="omission-a"></audio>
+		<audio src="sounds/score.mp3" id="score-a"></audio>
+		<audio src="sounds/lose.mp3" id="lose-a"></audio>
+		<audio src="sounds/back.mp3" id="loopAudio" loop></audio>
+	</div>
+		
+	<script src="main.js"></script>
+</body>
+</html>
